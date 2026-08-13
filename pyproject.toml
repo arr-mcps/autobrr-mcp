@@ -1,0 +1,22 @@
+[project]
+name = "autobrr-mcp"
+version = "0.0.0"
+description = "MCP server for autobrr's API (read + write)"
+license = "MIT"
+requires-python = ">=3.11"
+dependencies = ["fastmcp>=2.0.0"]
+
+[project.scripts]
+autobrr-mcp = "autobrr_mcp:main"
+
+[dependency-groups]
+dev = ["pytest>=8.0.0", "pytest-asyncio>=0.24.0"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+markers = ["integration: hits a real autobrr instance (needs AUTOBRR_URL/AUTOBRR_API_KEY)"]
+addopts = "-m 'not integration'"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
