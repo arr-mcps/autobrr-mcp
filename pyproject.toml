@@ -1,6 +1,6 @@
 [project]
 name = "autobrr-mcp"
-version = "0.0.0"
+version = "0.1.0"
 description = "MCP server for autobrr's API (read + write)"
 license = "MIT"
 requires-python = ">=3.11"
