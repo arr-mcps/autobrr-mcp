@@ -1,6 +1,6 @@
 # autobrr-mcp
 
-Part of the [arr-mcps](https://github.com/SavageCore/arr-mcps) collection.
+Part of the [arr-mcps](https://github.com/arr-mcps/arr-mcps) collection.
 MCP server exposing [autobrr](https://autobrr.com/)'s API as tools, so an LLM
 can read and manage a full autobrr instance: filters, indexers, IRC networks,
 RSS/Torznab feeds, download clients, actions, release queue and stats, import
@@ -17,7 +17,7 @@ creation; the server sends it as the `X-API-Token` header on every request.
 
 ## Install
 
-Download a wheel from the [latest release](https://github.com/SavageCore/autobrr-mcp/releases/latest)
+Download a wheel from the [latest release](https://github.com/arr-mcps/autobrr-mcp/releases/latest)
 and install it as a `uv` tool (no repo checkout needed):
 
 ```bash
@@ -103,6 +103,6 @@ make help  # list all commands
 | `make clean` | Remove build artifacts |
 
 The release workflow (`.github/workflows/release.yml`) builds and publishes to
-[Releases](https://github.com/SavageCore/autobrr-mcp/releases) whenever a `v*`
+[Releases](https://github.com/arr-mcps/autobrr-mcp/releases) whenever a `v*`
 tag is pushed - so the usual flow is `make bump-patch`, commit, then tag and
 push.
